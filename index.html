@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <meta charset="UTF-8">
   <head>
     <title>Text Sentiment Analysis</title>
     <style>
@@ -32,9 +33,18 @@
   <body>
     <h1>Text Sentiment Analysis</h1>
     <form action="/predict" method="post">
-      <label for="input">Enter text to analyze:</label>
-      <textarea id="input" name="input"></textarea>
+      <label for="text_input">Enter text to analyze:</label>
+      <textarea id="text_input" name="text_input" placeholder="Enter text here" required></textarea>
       <button type="submit">Analyze</button>
+	<br>
+      <br>
+      <h2>
+      {{ prediction_text }}
+      </h2>
     </form>
   </body>
 </html>
+
+
+
+
